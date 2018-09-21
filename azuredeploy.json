@@ -216,9 +216,9 @@
         "autoUpgradeMinorVersion": true,
         "settings": {
           "fileUris": [
-            "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/mongodb-on-centos/mongo-install-centos.sh"
+            "https://raw.githubusercontent.com/duffyco/postgres-on-centos/master/postgres-install-centos.sh"
           ],
-          "commandToExecute": "sh mongo-install-centos.sh"
+          "commandToExecute": "sh postgres-install-centos.sh"
         }
       }
     }
