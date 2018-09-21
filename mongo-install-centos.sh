@@ -6,3 +6,11 @@ yum -y update
 #semanage port -a -t mongod_port_t -p tcp 27017
 
 # Install Mongo DB and start service
+yum install postgresql-server postgresql-contrib
+postgresql-setup initdb
+systemctl enable postgresql
+
+systemctl start firewalld 
+firewall-cmd --zone=public --add-port=5432/tcp --permanent
+firewall-cmd --zone=public --add-port=5433/udp --permanent
+firewall-cmd --reload
